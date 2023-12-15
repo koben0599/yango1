@@ -2,9 +2,15 @@ body{
     padding: 0;
     margin: 0;
     width: 100%;
+    overflow-x: hidden;
+}
+header{
+    margin: 0;
 }
 .blo{
-    height: 805px;
+    font-size: 10px;
+    margin-top: 100px;
+    min-height: 1005px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -13,18 +19,46 @@ body{
 }
 .bl{
    
-  height: 805px; 
+  min-height: 1005px; 
 width: 50%;
   font-size: 17px;
-margin-left:100px ;
+margin-left:50px ;
      
  
+}
+.pc{
+min-height: 1005px;
+   width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bl2{
+
+    background-image: url(image/Capture2.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 300px;
+    width: 100%;
+    
+    }
+.bl3{
+    background-image: url(image/screen-0.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px;
+    
+    padding-right: 400px;
+    width: 100%;
+
 }
 .boc{
     margin-top: 70px;
     margin-bottom: 20px;
     background-color:gainsboro;
-    height: 800px;
+   min-height: 800px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -32,7 +66,7 @@ margin-left:100px ;
 }
 .boc1{
     width: 50%;
-    height: 800px;
+    min-height: 800px;
     
 }
 .boc2{
@@ -45,7 +79,7 @@ margin-left:100px ;
     border-bottom: solid 1px;
     margin-left:10px ;
     margin-right: 10px;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -54,7 +88,7 @@ margin-left:100px ;
 
 .cls{
     border-bottom: solid 1px;
-    height: 200px;
+    min-height: 200px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -63,16 +97,6 @@ margin-left:100px ;
     
 }
 
-.bl2{
-
-background-image: url(image/Capture2.PNG);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-padding: 350px;
-width: 50%;
-margin-bottom:140px ;
-}
 .sc2{
     background-image: url(image/orig\ \(1\).jpeg);
     background-size: cover;
@@ -84,7 +108,7 @@ margin-bottom:140px ;
 }
 .blo1{
     margin-top: 70px;
-    height: 805px;
+   min-height: 805px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -121,20 +145,20 @@ text-align: left;
     margin-bottom:140px; 
 }
 footer{
-    margin-top: 50px;
-    color: white;
-    height: 350px;
+    margin-top: 100px;
+   min-height:400px;
     width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
+ display: flex;
+ flex-direction: column;
+ justify-content:space-between ;
+ background-color: black;
     
     
 }
 .fo{
     margin-top: 20px;
     width: 100%;
-    height: 80px;
+   min-height:80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -147,8 +171,55 @@ footer{
 }
 .foo{
     width: 15%;
-    height: 150px;
+    min-height: 150px;
     display: flex;
     flex-direction: column;
       
+}
+@media screen and (max-width: 900px) {
+    .blo, .bl, .pc, .boc,
+     .boc1, .boc2,  .cls, 
+     .sc2, .blo1, .cont, .cont1,
+      .sc3, .footer, .fo, .fo1  {
+        overflow-x: hidden;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        
+    }
+   
+    .boc3{
+        overflow-x: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .p{
+        width: 50%;
+        color: white;
+       text-align: center;
+    }
+    .p1{
+        width: 30%;
+        text-align: center;
+    }
+    .fo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .fo1{
+        width: 40%;
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    }
+    .foo{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+      justify-content: space-between;
+    }
 }
